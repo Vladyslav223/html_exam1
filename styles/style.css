@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+.people {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.person {
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2F4F4F;
+    transition: transform 0s ease-in 1s;     
+         
+}
+
+.photo {
+    position: relative;
+}
+
+.photo img {
+    margin-top: 30px;
+    width: 200px;
+    border-radius: 102px; 
+    transition: border-radius 0s ease-in 1s; 
+     
+}
+
+.rank {
+    position: absolute;
+    top: 51%;
+    right: 8px;
+    background: white;
+    border-radius: 31px;
+    width: 32px;
+    height: 32px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 18px;
+    box-sizing: border-box;
+    padding: 7px;
+    color: #8B0000;
+}
+
+.extra {
+    visibility: hidden;
+}
+
+.person:hover .extra {
+    visibility: visible;
+}
+
+.person:hover {
+    transform: scale(1.2);
+}
+
+.person:hover img {
+    border-radius: 60px;
+}
+
+@media screen and (min-width: 1000px) {
+    .people {
+        grid-template-columns: repeat(4, 200px);
+    }
+}

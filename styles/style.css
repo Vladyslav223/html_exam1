@@ -15,7 +15,8 @@ body {
     font-size: 20px;
     line-height: 23px;
     color: #2F4F4F;
-    transition: transform 0s ease-in 1s;     
+    transform: scale(1);
+    transition: transform 1s ease-in-out;  
          
 }
 
@@ -27,7 +28,7 @@ body {
     margin-top: 30px;
     width: 200px;
     border-radius: 102px; 
-    transition: border-radius 0s ease-in 1s; 
+    transition: border-radius 1s ease-in 0s; 
      
 }
 
@@ -57,6 +58,7 @@ body {
 
 .person:hover {
     transform: scale(1.2);
+    background: #EEEEEE;
 }
 
 .person:hover img {
